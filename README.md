@@ -2,25 +2,24 @@
 
 ## Project ##
 
-Build our own JavaScript testingFramework.<br/>
+Building our own JavaScript testing framework from scratch.<br/>
 
 ## Our approach ##
 
-This project is done in a team of 3 people.<br/>
-We decide to name the framework from a combination of our 3 names.</br>
-To build it we used a class *square.js* already built.<br/>
-We decide to start by the simplest test possible (the *area()* function in this case) and to build the matchers needed for it.<br/>
+This project was undertaken by a team of 3 people.<br/>
+We decided to name the framework from a combination of our 3 names.</br>
+To build it we used a simple class *square.js* which was already provided.<br/>
+We decided to start by the simplest test possible (the *area()* function in this case) and to build the matchers needed for it.<br/>
 We then made the matchers for the *throw error* case.<br/>
-We also implement error messages in case of failing test and made the passing test showing in green and the failing on in red.<br/>
-This testingFramework still basic and unachieved.<br/>
-We might work on it to add more matchers and make it even more efficient.<br/>
-Our next step will be to add a *beforeBlock* matcher and matchers to have the possibility to mock and stub.<br/>
-We would also like in case of a failing test, to add a better stack trace with the line where the error is coming from.<br/>
-Also for now the result are not displayed on the page itself but only on the console. So the user have to inspect the page to see the results.<br/>
+We also implemented error messages in case of failing tests and made the passing test showing in green and the failing on in red.<br/>
+The framework is still very simplistic.<br/>
+Our next step is to add a *beforeBlock* matcher and matchers to have the possibility to mock and stub.<br/>
+We would also like, in case of a failing test, to add a better stack trace with the line where the error is coming from.<br/>
+Also for now the results are not displayed on the page itself, instead appearing on the console. As a result of this, users have to inspect the page to see the results.<br/>
 
 ### Our matchers ###
 
-1. `describe` : Have to be at the top of the file. Made to *describe* the class tested.<br/>
+1. `describe` : Should be at the top of the file. Made to *describe* the class tested.<br/>
 Inside of its block will be included the different *summary* and *it*.
 
 2. `summary` : Can be use to group tests depending on the same function.<br/>
@@ -31,7 +30,7 @@ This *grouping description* is optional, the developer might not use it they do 
 3. `it` : Allows the description of what the code tested should do.<br/>
 Inside its block will be written the test itself<br/>
 
-4. `expectEquality` : Allows to test an expected equality between a function called on an object and the output it should have.<br/>
+4. `expectEquality` : Allows to test equality between a function called on an object and the output it should have.<br/>
 
 5. `expectError` : Allows to test that the code throw error regarding some case.
 
@@ -82,7 +81,7 @@ Or you can just read the contains of it from the command line with `cat` :
 $ cat wanted_file.js
 ```
 
-### Write the tests ###
+### Writing tests ###
 
 You can use the *squareSpec.js* file as a guide to help you understand the syntax to build your own test for your own classes.<br/>
 
@@ -105,15 +104,15 @@ This will open the page with the test results directly on your Google Chrome bro
 
 4. To see the results of the tests, right click on the opened page on your browser and click on *inspect*.<br/>
 On the inspection panel, go onto the *console* tab, and the results of the test will be displayed.
-We made one test failed on purpose for the user to be able to see how it looks like when a test is failing.<br/>
+We made one test fail on purpose for the user to be able to see how it looks like when a test is failing.<br/>
 
 ![testResults](https://user-images.githubusercontent.com/43742795/51687169-e7e69480-1fe9-11e9-8bec-c8c398e6566e.png)
 
-The user are free to debug it and fix the test to make it pass :wink: .<br/>
+The user is free to debug it and fix the test to make it pass :wink: .<br/>
 
 ## Authors ##
 
-Our 3 fabulous team members who collaborate to build this testingFramework :<br/>
-@scass91 (Simon Cass) <br/>
-@anhuiyang <br/>
-@CelineKaslin (myself)
+Our 3 fabulous team members who collaborated to build this testingFramework :<br/>
+* [**C**eline Kaslin](https://github.com/CelineKaslin)
+* [**A**n-Hui Yang](https://github.com/anhuiyang)
+* [**Si**mon Cass](https://github.com/scass91)
